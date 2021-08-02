@@ -2,7 +2,7 @@
 FROM node:15-alpine AS dependencies
 WORKDIR /root/deps
 RUN npm set progress=false && npm config set depth 0
-RUN npm install serverless serverless-python-requirements
+RUN npm install serverless serverless-python-requirements serverless-wsgi
 
 
 #
