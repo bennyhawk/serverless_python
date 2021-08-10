@@ -30,4 +30,3 @@ WORKDIR /home/appuser
 
 COPY --from=dependencies /root/deps/node_modules ./node_modules
 ENV PATH ./node_modules/.bin:$PATH
-ENTRYPOINT ["sh"]
